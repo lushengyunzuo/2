@@ -51,7 +51,7 @@
           &:last-child {
             &:after {
               content: '';
-              display: none;
+              display: none;  
             }
           }
         }
@@ -59,7 +59,9 @@
     }
   }
 }
-
+.flex_d{
+  flex-direction: column;
+}
 .innerbanner {
   position: relative;
 
@@ -75,6 +77,10 @@
     font-size: 49px;
     font-family: CenturyGothicBold;
     color: #ffffff;
+    .innerbanner_summary{
+      font-size: 18px;
+      margin-top: 25px;
+    }
   }
 
   >img {
@@ -1472,6 +1478,9 @@
               color: #fff;
               min-width: 233px;
               font-family: CenturyGothicBold;
+              p{
+                color: #fff;
+              }
             }
 
             td {
@@ -1481,12 +1490,13 @@
               text-align: left;
               color: #060c10;
               line-height: 40px;
+
             }
           }
         }
       }
 
-      >p {
+      p {
         font-size: 20px;
         font-family: CenturyGothic;
         color: #272727;
@@ -1498,14 +1508,15 @@
         >strong {
           display: block;
           font-family: CenturyGothicBold;
+          &::before {
+            content: "•";
+            color: #000;
+            left: -10px;
+            position: absolute;
+          }
         }
 
-        &::before {
-          content: "•";
-          color: #000;
-          left: -10px;
-          position: absolute;
-        }
+
       }
     }
 
