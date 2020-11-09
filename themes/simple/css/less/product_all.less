@@ -51,7 +51,7 @@
           &:last-child {
             &:after {
               content: '';
-              display: none;  
+              display: none;
             }
           }
         }
@@ -59,9 +59,11 @@
     }
   }
 }
-.flex_d{
+
+.flex_d {
   flex-direction: column;
 }
+
 .innerbanner {
   position: relative;
 
@@ -77,7 +79,8 @@
     font-size: 49px;
     font-family: CenturyGothicBold;
     color: #ffffff;
-    .innerbanner_summary{
+
+    .innerbanner_summary {
       font-size: 18px;
       margin-top: 25px;
     }
@@ -149,6 +152,41 @@
       color: #ffffff;
       line-height: 41px;
       border: none;
+    }
+  }
+
+  table {
+    width: 100%;
+    margin-bottom: 72px;
+
+    tbody {
+      tr {
+        height: auto;
+        border-bottom: 1px solid #E0E0E0;
+
+        >:first-child {
+          padding-left: 5px;
+          background-color: #2b2b2b;
+          color: #fff;
+          text-align: center;
+          font-family: CenturyGothicBold;
+
+          p {
+            color: #fff;
+          }
+        }
+
+        td {
+          font-size: 16px;
+          font-family: CenturyGothic;
+          text-align: left;
+          color: #060c10;
+          line-height: 40px;
+          border: 1px solid #ccc;
+          display: table-cell;
+          vertical-align: middle;
+        }
+      }
     }
   }
 }
@@ -1478,7 +1516,8 @@
               color: #fff;
               min-width: 233px;
               font-family: CenturyGothicBold;
-              p{
+
+              p {
                 color: #fff;
               }
             }
@@ -1508,6 +1547,7 @@
         >strong {
           display: block;
           font-family: CenturyGothicBold;
+
           &::before {
             content: "•";
             color: #000;
@@ -1655,31 +1695,6 @@
           &:hover {
             width: 150px;
             letter-spacing: 1px;
-          }
-        }
-      }
-
-      .news {
-        display: flex;
-        flex-direction: column;
-
-        >div {
-          >:first-child {
-            font-size: 14px;
-            font-family: CenturyGothic;
-            color: #e94e1b;
-            line-height: 14px;
-            margin-bottom: 17px;
-          }
-
-          >:last-child {
-            font-size: 16px;
-            font-family: CenturyGothic;
-            font-weight: bold;
-            color: #2d2d2d;
-            line-height: 30px;
-            margin-bottom: 15px;
-            border-bottom: 1px solid rgba(0, 0, 0, .2);
           }
         }
       }
